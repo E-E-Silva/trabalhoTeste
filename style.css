@@ -1,0 +1,43 @@
+:root {
+    --azul--10: #1e42b8;
+    --prata--1: #bebdbd;
+    --branco-1: #fff;
+    
+}
+
+.body {
+    margin: 0;
+}
+/* Main - Meio do site */
+
+.divMain {
+    display: flex;
+    border: solid;
+}
+
+
+
+
+
+/* Final do Main */
+/* Cabeça do Site apenas a parte superior */
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(white);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.section1 {
+    flex: 1;
+    text-align: center;
+}
+
+.margin {
+    margin: 0 1rem;
+}
