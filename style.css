@@ -1,21 +1,73 @@
-:root {
+:root{
     --azul--10: #1e42b8;
     --prata--1: #bebdbd;
     --branco-1: #fff;
     
 }
 
-.body {
+body{
     margin: 0;
+    font-size: large;
+    font-family: 'Times New Roman';
 }
+    /* Começo do final da pagina */
+
+footer{
+    margin-top: 50px;
+}
+.containerFinal{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.containerInformacoes{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+    /* Fim Footer */
+
 /* Main - Meio do site */
 
-.divMain {
-    display: flex;
-    border: solid;
+main{
+    margin-top: 2.6rem;
 }
 
 
+
+.divMain{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 10px;
+    height: 550px;
+    width: auto;
+    text-align: justify;
+    
+}
+
+.divMain1{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 10px;
+    height: 550px;
+    width: auto;
+    text-align: justify;
+    padding-top: 30px;
+}
+.minhaImagem{
+    height: 350px;
+    width: 400px;
+}
+.containerDivSection{
+    gap: 1px;
+    height: 300px;
+    width: 350px;
+
+}
 
 
 
@@ -30,7 +82,7 @@
 }
 
 .logo img {
-    height: 50px;
+    height: 3.2rem;
 }
 
 .section1 {
