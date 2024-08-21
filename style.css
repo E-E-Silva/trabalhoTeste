@@ -4,6 +4,7 @@
     --verde--15: #8DFFCD;
     --verde-8: #68D89B;
     --verde-12: #4F9D69;
+    --vermelho-10: #13020280;
     
 }
 
@@ -13,7 +14,11 @@ body{
     font-family: 'Times New Roman';
     color: #EADEDA;
 }
-   
+ 
+.border{
+    border: solid var(--verde-8);
+}
+
 
 /* Main - Meio do site */
 
@@ -30,10 +35,8 @@ body{
 
 .containerCapacete {
     display: flex;
-    justify-content: space-around;
-    gap: 300px;
-    max-width: 1200px;
-    width: 100%;
+    flex-direction: row;
+    gap: 40px;
     color: black;
     
 }
@@ -43,6 +46,21 @@ body{
     padding: 10px;
     text-align: center;
     flex: 1;
+    color: white;
+    transition: 0.4s;
+}
+
+.capacetes:hover{
+    background-color: var(--vermelho-10);
+
+}
+
+
+.containerVestuario{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px; 
+    gap: 30px;
 }
 
 /* Final do Main */
@@ -90,10 +108,6 @@ body{
 .containerInformacoes{
     display: flex;
     justify-content: center;
-}
-
-.border{
-    border: solid var(--azul--10);
 }
 
 
