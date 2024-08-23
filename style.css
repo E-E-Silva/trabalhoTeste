@@ -19,7 +19,7 @@ body{
     border: solid var(--verde-8);
 }
 
-.scroll-to-top {
+.scroll-to-top{
     position: fixed;
     bottom: 20px;
     right: 20px; 
@@ -134,7 +134,7 @@ main{
     font-family: 'times New Roman';
 }
 
-.containerCapacete {
+.containerCapacete{
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -207,7 +207,7 @@ main{
 
 /* Começo da Responsividade */
 
-:root {
+:root{
     --verde--10: #8A3033;
     --verde--5: #ffffff;
     --verde--15: #8DFFCD;
@@ -216,49 +216,50 @@ main{
     --vermelho-10: #13020280;
 }
 
-body {
+body{
     margin: 0;
     font-size: large;
     font-family: 'Times New Roman', serif;
     color: #EADEDA;
 }
 
-.border {
+.border{
     border: solid var(--verde-8);
 }
 
 /* Cabeça do Site apenas a parte superior */
 
-.divHead {
+.divHead{
     display: flex;
     flex-direction: row;
     background-color: var(--verde--10);
+    justify-content: space-around;
 }
 
-.divLogo {
+.divLogo{
     margin: 20px 0 0 50px;
 }
 
-.container-header {
+.container-header{
     display: flex;
     justify-content: space-around;
     margin: 0;
 }
 
-.section1 {
+.section1{
     display: flex;
     margin: 0 160px 0 200px;
     gap: 250px;
     padding-top: 3%;
 }
 
-.nomesHeader {
+.nomesHeader{
     font-size: large;
     font-family: Arial, sans-serif;
     font-weight: 600;
 }
 
-.ajusteLogos {
+.ajusteLogos{
     height: 108px;
     width: 108px;
 }
@@ -267,56 +268,56 @@ body {
 
 /* Main - Meio do site */
 
-main {
+main{
     margin: 0;
     padding: 0 4.5rem;
     background-color: var(--verde--10);
 }
 
-.prologoPagina {
+.prologoPagina{
     margin: 0;
     padding: 2rem 6rem;
     background-color: var(--verde--5);
     color: black;
 }
 
-.centralizando {
+.centralizando{
     margin: 8% 5%;
 }
 
-.divPrincipalTituloImagem {
+.divPrincipalTituloImagem{
     display: flex;
     flex-direction: row;
 }
 
-.divTituloImagem {
+.divTituloImagem{
     padding-top: 3%;
 }
 
-.titulosMotos {
+.titulosMotos{
     display: flex;
     justify-content: center;
 }
 
-.alturaMotos {
+.alturaMotos{
     height: 285px;
 }
 
-.mainConteudo {
+.mainConteudo{
     padding: 12%;
     font-size: 100%;
     font-weight: 600;
     font-family: 'Times New Roman', serif;
 }
 
-.containerCapacete {
+.containerCapacete{
     display: flex;
     flex-direction: row;
     gap: 40px;
     color: black;
 }
 
-.capacetes {
+.capacetes{
     background-color: var(--verde--10);
     padding: 10px;
     text-align: center;
@@ -325,19 +326,30 @@ main {
     transition: 1s;
 }
 
-.capacetes:hover {
+.centerH2{
+    display: flex;
+    justify-content: center;
+}
+
+.capacetes:hover{
     background-color: var(--vermelho-10);
 }
 
-.containerVestuario {
+.tituloMain{
+    display: flex;
+    align-items: center;
+}
+
+.containerVestuario{
     display: flex;
     flex-direction: row;
     margin: 100px 0 50px -25px;
     gap: 10px;
     flex-wrap: nowrap;
+    align-items: flex-end;
 }
 
-.vestuario {
+.vestuario{
     background-color: var(--verde--10);
     padding: 10px;
     text-align: center;
@@ -346,7 +358,7 @@ main {
     transition: 1s;
 }
 
-.vestuario:hover {
+.vestuario:hover{
     background-color: var(--vermelho-10);
 }
 
@@ -354,20 +366,127 @@ main {
 
 /* Começo Footer */
 
-footer {
+footer{
     margin-top: 50px;
     background-color: rgb(0, 0, 0);
     color: white;
 }
 
-.containerFinal {
+.containerFinal{
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
 }
 
-.containerInformacoes {
+.containerInformacoes{
     display: flex;
     justify-content: center;
 }
 
+/* Começo da Responsividade */
+
+/* 1440 x 1264 */
+@media screen and (max-width: 1440px){
+    .section1 {
+        margin: 0 120px;
+        gap: 200px;
+    }
+
+    .prologoPagina {
+        padding: 1.5rem 4.5rem;
+    }
+
+    .mainConteudo {
+        padding: 10%;
+    }
+
+    .containerVestuario{
+        flex-wrap: wrap;
+    }
+
+    .divPrincipalTituloImagem{
+        flex-direction: column;
+    }
+
+    
+}
+/* 1025 até 1325 */
+
+@media (min-width: 1025px) and (max-width: 1325px){
+    .containerCapacete{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .scroll-to-top{
+        display: none;
+    }
+}
+
+/* 1024 x 1080 */
+@media screen and (max-width: 1024px){
+    .section1 {
+        margin: 0 160px;
+        gap: 250px;
+    }
+
+    .prologoPagina {
+        padding: 2rem 6rem;
+    }
+
+    .mainConteudo {
+        padding: 12%;
+    }
+
+    .alturaMotos{
+        width: 50%;
+        height: 50%;
+    }
+
+    .containerCapacete,
+    .containerVestuario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll-to-top{
+        display: none;
+    }
+}
+/* 768 x 1024 */
+@media screen and (max-width: 767px){
+    .section1 {
+        margin: 0 60px;
+        gap: 100px;
+        flex-direction: column;
+    }
+
+    .divLogo {
+        margin: 20px 0;
+    }
+
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prologoPagina {
+        padding: 1rem 3rem;
+    }
+
+    .mainConteudo {
+        padding: 8%;
+    }
+
+    .containerCapacete,
+    .containerVestuario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll-to-top{
+        display: none;
+    }
+}
+
+/* SO FALTOU AGORA BOTAR O MENU HAMBURGUER NO HEADER DO SITE */
