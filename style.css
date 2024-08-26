@@ -38,6 +38,10 @@ body{
 
 /* Cabeça do Site apenas a parte superior */
 
+.menuMobile{
+    display: none;
+}
+
 .divHead{
     display: flex;
     flex-direction: row;
@@ -47,6 +51,7 @@ body{
 
 .divLogo{
     margin: 20px 0 0 50px;
+    background-color: var(--verde--10);
 }
 
 .container-header{
@@ -277,16 +282,43 @@ footer{
     }
 }
 
-/* 768 x 1024 */
+/* 768 x 1000 */
 @media screen and (max-width: 767px){
     .section1 {
         margin: 0 60px;
         gap: 100px;
         flex-direction: column;
     }
+    #menuPodrao{
+        display: none;
+        
+    }
+
+    .menuMobile{
+        display: block;
+        
+    }
+
+    .menuDesktop{
+        display: none;
+    }
 
     .divLogo {
-        margin: 20px 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .divLogo1 {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #8A3033;
+    } 
+
+    li{
+        margin: 0;
     }
 
     .container-header {
@@ -317,6 +349,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
-   
+   /* .menu{ 
+    display: flex;
+    justify-content: space-around;
+    }  */
     
 }
