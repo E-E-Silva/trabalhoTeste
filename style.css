@@ -5,24 +5,23 @@
     --verde-8: #68D89B;
     --verde-12: #4F9D69;
     --vermelho-10: #13020280;
-    
 }
 
 body{
-    margin: 0 0;
+    margin: 0;
     font-size: large;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
     color: #EADEDA;
 }
- 
+
 .border{
     border: solid var(--verde-8);
 }
 
 .scroll-to-top{
     position: fixed;
-    bottom: 20px;
-    right: 20px; 
+    top: 500px;
+    right: 50px; 
     width: 50px; 
     height: 50px; 
     background-color: rgba(0, 0, 0, 0.5); 
@@ -39,205 +38,15 @@ body{
 
 /* Cabeça do Site apenas a parte superior */
 
-.divHead{
-    display: flex; 
-    flex-direction: row; 
-    background-color: var(--verde--10)
+.menuMobile{
+    display: none;
 }
-.divLogo{
-    margin: 20px 0 0 50px;
-}
-.container-header {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0;
-}
-
-.section1 {
-    display: flex;
-    
-    margin: 0 160px 0 200px;
-    gap: 250px;
-    padding-top: 3%;
-    
-}
-
-.nomesHeader{
-    font-size: large;
-    font-family: arial;
-    font-weight: 600;
-}
-
-.corLink{
-    color: white;
-    text-decoration: none;
-}
-
-
-.ajusteLogos{
-    height: 108px;
-    width: 108px;
-    padding-left: 25%;
-}
-
-.ajusteLogos1{
-    padding-left: 5%;
-}
-
-.ajusteLogos2{
-    padding-left: -4%;
-}
-
-/* Final Do Começo do Site */
-
-
-/* Main - Meio do site */
-
-main{
-    margin: 0 0; 
-    padding: 0 4.5rem; 
-    background-color: var(--verde--10);
-}
-
-.prologoPagina{
-    margin: 0 0; 
-    padding: 2rem 6rem; 
-    background-color: var(--verde--5); 
-    color: black;
-}
-.centralizando{
-    margin: 8% 5%;
-}
-
-.divPrincipalTituloImagem{
-    display: flex; 
-    flex-direction: row;
-}
-
-.divTituloImagem{
-    padding-top: 3%;
-}
-
-.titulosMotos{
-    display: flex; 
-    justify-content: center;
-}
-
-.alturaMotos{
-    height: 285px;
-}
-
-.mainConteudo{
-    padding: 12%;
-    font-size: 100%;
-    font-weight: 600;
-    font-family: 'times New Roman';
-}
-
-.containerCapacete{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    color: black;
-    
-}
-
-.capacetes {
-    background-color: var(--verde--10);
-    padding: 10px;
-    text-align: center;
-    flex: 1;
-    color: white;
-    transition: 1s;
-}
-
-.capacetes:hover{
-    background-color: var(--vermelho-10);
-    
-}
-
-
-.containerVestuario{
-    display: flex;
-    flex-direction: row;
-    margin: 100px 0px 50px -25px;
-    gap: 10px;
-    flex-wrap: nowrap;
-}
-
-
-.vestuario{
-    background-color: var(--verde--10);
-    padding: 10px;
-    text-align: center;
-    flex: 1;
-    color: white;
-    transition: 1s;
-    
-}
-
-
-.vestuario:hover{
-    background-color: var(--vermelho-10);
-    
-}
-
-/* Final do Main */
-
-
- /* Começo  Footer */
-
- footer{
-    margin-top: 50px;
-    background-color: rgb(0, 0, 0); 
-    color: white;
-}
-.containerFinal{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
-}
-.containerInformacoes{
-    display: flex;
-    justify-content: center;
-}
-
-    /* Fim Footer */
-
-
-/* Começo da Responsividade */
-
-:root{
-    --verde--10: #8A3033;
-    --verde--5: #ffffff;
-    --verde--15: #8DFFCD;
-    --verde-8: #68D89B;
-    --verde-12: #4F9D69;
-    --vermelho-10: #13020280;
-}
-
-body{
-    margin: 0;
-    font-size: large;
-    font-family: 'Times New Roman', serif;
-    color: #EADEDA;
-}
-
-.border{
-    border: solid var(--verde-8);
-}
-
-/* Cabeça do Site apenas a parte superior */
 
 .divHead{
     display: flex;
     flex-direction: row;
     background-color: var(--verde--10);
     justify-content: space-around;
-}
-
-.divLogo{
-    margin: 20px 0 0 50px;
 }
 
 .container-header{
@@ -259,9 +68,14 @@ body{
     font-weight: 600;
 }
 
-.ajusteLogos{
-    height: 108px;
-    width: 108px;
+.corLink{
+    color: white;
+    text-decoration: none;
+}
+
+.ajusteLogo{
+    display: flex; 
+    justify-content: center;
 }
 
 /* Final Do Começo do Site */
@@ -281,8 +95,25 @@ main{
     color: black;
 }
 
+.centralizandoTitulos{
+    display: flex; 
+    justify-content: center;
+    font-weight: 900;
+}
+
 .centralizando{
     margin: 8% 5%;
+}
+
+.menuResponsivo{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+.motoResponsividade{
+    display: flex; 
+    justify-content: center;
 }
 
 .divPrincipalTituloImagem{
@@ -303,6 +134,10 @@ main{
     height: 285px;
 }
 
+.motoCelular{
+    display: none;
+}
+
 .mainConteudo{
     padding: 12%;
     font-size: 100%;
@@ -315,6 +150,7 @@ main{
     flex-direction: row;
     gap: 40px;
     color: black;
+    justify-content: center;
 }
 
 .capacetes{
@@ -343,10 +179,10 @@ main{
 .containerVestuario{
     display: flex;
     flex-direction: row;
-    margin: 100px 0 50px -25px;
     gap: 10px;
     flex-wrap: nowrap;
-    align-items: flex-end;
+    align-items: center;
+    /* align-items: flex-end;  */
 }
 
 .vestuario{
@@ -407,11 +243,9 @@ footer{
     .divPrincipalTituloImagem{
         flex-direction: column;
     }
-
-    
 }
-/* 1025 até 1325 */
 
+/* 1025 até 1325 */
 @media (min-width: 1025px) and (max-width: 1325px){
     .containerCapacete{
         display: flex;
@@ -425,6 +259,33 @@ footer{
 
 /* 1024 x 1080 */
 @media screen and (max-width: 1024px){
+    body{
+        margin: 0;
+        align-items: center;
+    }
+
+    .menuMobile{
+        display: block;
+        
+    }
+
+    .divLogo1 {
+        margin: 0;
+        background-color: var(--verde--10);
+    } 
+
+    .menuDesktop{
+        display: none;
+    }
+
+    .divLogo {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--verde--10);
+    }
+    
     .section1 {
         margin: 0 160px;
         gap: 250px;
@@ -444,25 +305,29 @@ footer{
     }
 
     .containerCapacete,
-    .containerVestuario {
+    .containerVestuario,
+    .divPrincipalTituloImagem {
         flex-direction: column;
         align-items: center;
+        flex-wrap: nowrap;
     }
 
     .scroll-to-top{
         display: none;
     }
 }
-/* 768 x 1024 */
+
+/* 767 x 1000 */
 @media screen and (max-width: 767px){
+
     .section1 {
         margin: 0 60px;
         gap: 100px;
         flex-direction: column;
     }
 
-    .divLogo {
-        margin: 20px 0;
+    #menuPodrao{
+        display: none;
     }
 
     .container-header {
@@ -479,7 +344,8 @@ footer{
     }
 
     .containerCapacete,
-    .containerVestuario {
+    .containerVestuario
+     {
         flex-direction: column;
         align-items: center;
     }
@@ -487,6 +353,15 @@ footer{
     .scroll-to-top{
         display: none;
     }
-}
+    
+    .containerFinal{
+        display: flex;
+        flex-direction: column;
+    }
 
-/* SO FALTOU AGORA BOTAR O MENU HAMBURGUER NO HEADER DO SITE */
+    .zerandoPadding{
+        padding: 0 0 0 0;
+    }
+   
+
+}
