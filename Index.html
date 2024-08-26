@@ -15,36 +15,17 @@
 <body>
     <header>
         <section>
-            <div class="menuDesktop">
-                <nav class="divHead">
-                    <div class="divLogo">
-                        <a class="corLink" href="http://127.0.0.1:5500/"><img id="Logo" src="Projeto/Motooos_Mania-removebg-preview.png" alt="logo"></a>
-                    </div>
-                    <div class="container-header nomesHeader">    
-                        <div class="section1">             
-                            <div><a class="corLink" target="_self" href="#Motos"><img src="Projeto/Logo Moto.png" alt="MOTO"><p class="ajusteLogos">MOTO</p></a></div>
-                            <div><a class="corLink" target="_self" href="#CAPACETE"><img src="Projeto/Logo Capacete.png" alt="CAPACETE"><p class="ajusteLogos1">CAPACETE</p></a></div>
-                            <div><a class="corLink" target="_self" href="#VESTÚARIO"><img src="Projeto/jaqueta.png" alt="VESTÚARIO"><p class="ajusteLogos2">VESTÚARIO</p></a></div>
-                        </div>
-                    </div>  
-                </nav>
-            </div>
-            <div class="menuMobile">
-                <div>
-                    <div class="divLogo menu">
-                        <a class="corLink" href="http://127.0.0.1:5500/"><img id="Logo" src="Projeto/Motooos_Mania-removebg-preview.png" alt="logo"></a>
-                        <button class="botao" onclick="chamaMenu()">☰</button>
-                    </div>
+            <div class="divHead">
+                <div class="divLogo">
+                    <a class="corLink" href="http://127.0.0.1:5500/"><img id="Logo" src="Projeto/Motooos_Mania-removebg-preview.png" alt="logo"></a>
                 </div>
-                <nav id="menuPodrao" class="divLogo1">
-
-                        <ul>
-                            <li><a class="corLink" target="_self" href="#Motos"><img src="Projeto/Logo Moto.png" alt="MOTO"><p>MOTO</p></a></li>
-                            <li><a class="corLink" target="_self" href="#CAPACETE"><img src="Projeto/Logo Capacete.png" alt="CAPACETE"><p>CAPACETE</p></a></li>
-                            <li><a class="corLink" target="_self" href="#VESTÚARIO"><img src="Projeto/jaqueta.png" alt="VESTÚARIO"><p>VESTÚARIO</p></a></li>
-                        </ul>
-                    
-                </nav>
+                <div class="container-header nomesHeader">    
+                    <div class="section1">             
+                        <div><a class="corLink" target="_self" href="#Motos"><img src="Projeto/Logo Moto.png" alt="MOTO"><p class="ajusteLogos">MOTO</p></a></div>
+                        <div><a class="corLink" target="_self" href="#CAPACETE"><img src="Projeto/Logo Capacete.png" alt="CAPACETE"><p class="ajusteLogos1">CAPACETE</p></a></div>
+                        <div><a class="corLink" target="_self" href="#VESTÚARIO"><img src="Projeto/jaqueta.png" alt="VESTÚARIO"><p class="ajusteLogos2">VESTÚARIO</p></a></div>
+                    </div>
+                </div>      
             </div>
         </section>
     </header>
@@ -54,18 +35,18 @@
 
     <main>
         <section class="prologoPagina">
-            <h1 class="centralizandoTitulos">Bem-vindo à Moto Mania!</h1>
+            <h1>Bem-vindo à Moto Mania!</h1>
             <p>No Moto Mania, oferecemos informações sobre seleção de motos, capacetes e vestuário para as suas necessidades de pilotagem. 
                 Se você está procurando um equipamento perfeito para a cidade, uma moto confortável para viagens ou uma máquina robusta para trilhas, aqui você encontra tudo o que precisa. 
                 Explore nossa gama e encontre o que se encaixa no seu estilo e nas suas aventuras!</p>
         </section>
         <section id="Motos" class="motosResponsividade"> 
             <div class=centralizando>
-                <h2 class="centralizandoTitulos">Urbanas</h2>
+                <h2>Guia Moto Modelos Urbanos</h2>
                 <div class="divPrincipalTituloImagem">
                     <div class="divTituloImagem">
+                        <h3 class="titulosMotos">Moto City Cruiser 300</h3>
                         <img class="alturaMoto" src="Projeto/City-Cruiser-300.png" alt="Moto-City-Cruiser-300">
-                        <h3 class="titulosMotos">Moto City Cruisym 300</h3>
                     </div>
                     <div class="mainConteudo">
                         <span>A Moto City Cruiser 300 é ideal para o ambiente urbano. Com seu motor de 300cc, ela oferece uma condução ágil e eficiente, perfeita para o trânsito das grandes cidades. 
@@ -75,11 +56,12 @@
                     </div>
                 </div>
             </div>
+            <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">▲</button>
             <div class=centralizando>
                 <div class="divPrincipalTituloImagem">
                     <div class="divTituloImagem">
-                        <img class="alturaMoto" src="Projeto/Scooter-Urban.png" alt="Scooter-Urban-Speed-150">
                         <h3 class="titulosMotos">Scooter Urban Speed 150</h3>
+                        <img class="alturaMoto" src="Projeto/Scooter-Urban.png" alt="Scooter-Urban-Speed-150">
                     </div>
                     <div class="mainConteudo">
                         <span>O Scooter Urban Speed 150 combina praticidade e estilo para a vida na cidade. 
@@ -89,13 +71,12 @@
                     </div>
                 </div>
             </div>
-            <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">▲</button>
             <div class=centralizando>
-                <h2 class="centralizandoTitulos">Viagens</h2>
+                <h2>Guia Moto Para Viagem</h2>
                 <div class="divPrincipalTituloImagem">
                     <div class="divTituloImagem">
-                        <img class="alturaMoto" src="Projeto/Harley-Davidson.png" alt="Harley-Davidson-CVO-Road">
                         <h3 class="titulosMotos">Harley-Davidson CVO Road</h3>
+                        <img class="alturaMoto" src="Projeto/Harley-Davidson.png" alt="Harley-Davidson-CVO-Road">
                     </div>
                     <div class="mainConteudo">
                         <span>Para viagens longas, a Harley-Davidson CVO Road é a escolha perfeita. Com um motor robusto de 107 cv e um sistema de suspensão de alta performance, ela oferece conforto e estabilidade em estradas e rodovias. 
@@ -105,11 +86,11 @@
                 </div>
             </div>
             <div class=centralizando>
-                <h2 class="centralizandoTitulos">Trilha</h2>
+                <h2>Guia Moto Para Trilha</h2>
                 <div class="divPrincipalTituloImagem">
                     <div class="divTituloImagem">
-                        <img class="alturaMoto" src="Projeto/Honda CRF 230F.png" alt="Honda-CRF-230F">
                         <h3 class="titulosMotos">Honda CRF 230F</h3>
+                        <img class="alturaMoto" src="Projeto/Honda CRF 230F.png" alt="Honda-CRF-230F">
                     </div>
                     <div class="mainConteudo">
                         <span>A Honda CRF 230F é feita para os amantes de trilhas e off-road. 
@@ -129,8 +110,8 @@
                         <img src="Projeto/Capacete urbano.png" alt="CAPACETE">
                         <p>O Capacete Urban Neo é ideal para pilotagem urbana. Com um design compacto e arejado, ele proporciona uma ventilação eficaz e um ajuste confortável. </p>
                     </div>
-                    <div class="capacetes capacete2">
-                        <img class="capacete2" src="Projeto/Capacete Para viagem.png" alt="CAPACETE">
+                    <div class="capacetes ">
+                        <img src="Projeto/Capacete Para viagem.png" alt="CAPACETE">
                         <p>O  Touring Pro é projetado para viagens de longa distância. Com uma estrutura aerodinâmica e um sistema de ventilação avançado, ele proporciona conforto e segurança em longas horas de pilotagem. </p>
                     </div>
                     <div class="capacetes capacetes1280">
@@ -163,44 +144,32 @@
                 </div>
             </div>
          </section>
-    </main>
-  
-
+    </main> 
   
     <footer>
         <div>
             <div class="containerInformacoes"><H3>Informações de Contato</H3></div>
             <div class="containerFinal">
                 <ul>
-                    <li><p><strong>Nome:</strong> Emerson Silva</p></li>
-                    <li><p><strong>E-mail:</strong> <a class="corLink" href="mailto:emersonprofissional8@gmail.com">emersonprofissional8@gmail.com</a></p></li>
+                    <li><span><strong>Nome:</strong> Emerson Silva</span></li>
+                    <li><span><strong>E-mail:</strong> <a href="mailto:emersonprofissional8@gmail.com">emersonprofissional8@gmail.com</a></span></li>
                 </ul>
                 <ul>
-                    <li><p><strong>Instituição:</strong> Faculdade Unitese</p></li>
-                    <li><p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas - 1º Semestre</p></li>
+                    <li><span><strong>Instituição:</strong> Faculdade Unitese</span></li>
+                    <li><span><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas - 1º Semestre</span></li>
                 </ul>
                 <ul>
-                    <li><p><strong>Git Hub:</strong> <a  class="corLink" href="https://github.com/E-E-Silva"> Portfólio</a></p></li>
-                    <li><p><strong>Currículo:</strong><a  class="corLink" href="https://chatgpt.com/"> Currículo</a></p></li>
+                    <li><span><strong>Git Hub:</strong> <a href="https://github.com/E-E-Silva"> Portfólio</a></span></li>
+                    <li><span><strong>Currículo:</strong><a href="https://chatgpt.com/"> Currículo</a></span></li>
                 </ul>
             </div>
         </div>        
     </footer>
-
-    <script>
-
-        var menu = document.getElementById("menuPodrao");
-    
-        function chamaMenu(){
-            if(menu.style.display == "none"){
-                menu.style.display = "block";
-            } else {
-                menu.style.display = "none";
-            }
-    
-        }
-    </script>
 </body>
-
 </html>
+
+
+
+
+
 

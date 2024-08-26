@@ -5,23 +5,24 @@
     --verde-8: #68D89B;
     --verde-12: #4F9D69;
     --vermelho-10: #13020280;
+    
 }
 
 body{
-    margin: 0;
+    margin: 0 0;
     font-size: large;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman';
     color: #EADEDA;
 }
-
+ 
 .border{
     border: solid var(--verde-8);
 }
 
 .scroll-to-top{
     position: fixed;
-    top: 500px;
-    right: 50px; 
+    bottom: 20px;
+    right: 20px; 
     width: 50px; 
     height: 50px; 
     background-color: rgba(0, 0, 0, 0.5); 
@@ -38,9 +39,195 @@ body{
 
 /* Cabeça do Site apenas a parte superior */
 
-.menuMobile{
-    display: none;
+.divHead{
+    display: flex; 
+    flex-direction: row; 
+    background-color: var(--verde--10)
 }
+.divLogo{
+    margin: 20px 0 0 50px;
+}
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0;
+}
+
+.section1 {
+    display: flex;
+    
+    margin: 0 160px 0 200px;
+    gap: 250px;
+    padding-top: 3%;
+    
+}
+
+.nomesHeader{
+    font-size: large;
+    font-family: arial;
+    font-weight: 600;
+}
+
+.corLink{
+    color: white;
+    text-decoration: none;
+}
+
+
+.ajusteLogos{
+    height: 108px;
+    width: 108px;
+    padding-left: 25%;
+}
+
+.ajusteLogos1{
+    padding-left: 5%;
+}
+
+.ajusteLogos2{
+    padding-left: -4%;
+}
+
+/* Final Do Começo do Site */
+
+
+/* Main - Meio do site */
+
+main{
+    margin: 0 0; 
+    padding: 0 4.5rem; 
+    background-color: var(--verde--10);
+}
+
+.prologoPagina{
+    margin: 0 0; 
+    padding: 2rem 6rem; 
+    background-color: var(--verde--5); 
+    color: black;
+}
+.centralizando{
+    margin: 8% 5%;
+}
+
+.divPrincipalTituloImagem{
+    display: flex; 
+    flex-direction: row;
+}
+
+.divTituloImagem{
+    padding-top: 3%;
+}
+
+.titulosMotos{
+    display: flex; 
+    justify-content: center;
+}
+
+.alturaMotos{
+    height: 285px;
+}
+
+.mainConteudo{
+    padding: 12%;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: 'times New Roman';
+}
+
+.containerCapacete{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: black;
+    
+}
+
+.capacetes {
+    background-color: var(--verde--10);
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    color: white;
+    transition: 1s;
+}
+
+.capacetes:hover{
+    background-color: var(--vermelho-10);
+    
+}
+
+
+.containerVestuario{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0px 50px -25px;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+
+.vestuario{
+    background-color: var(--verde--10);
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    color: white;
+    transition: 1s;
+    
+}
+
+
+.vestuario:hover{
+    background-color: var(--vermelho-10);
+    
+}
+
+/* Final do Main */
+
+
+ /* Começo  Footer */
+
+ footer{
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0); 
+    color: white;
+}
+.containerFinal{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.containerInformacoes{
+    display: flex;
+    justify-content: center;
+}
+
+    /* Fim Footer */
+
+
+/* Começo da Responsividade */
+
+:root{
+    --verde--10: #8A3033;
+    --verde--5: #ffffff;
+    --verde--15: #8DFFCD;
+    --verde-8: #68D89B;
+    --verde-12: #4F9D69;
+    --vermelho-10: #13020280;
+}
+
+body{
+    margin: 0;
+    font-size: large;
+    font-family: 'Times New Roman', serif;
+    color: #EADEDA;
+}
+
+.border{
+    border: solid var(--verde-8);
+}
+
+/* Cabeça do Site apenas a parte superior */
 
 .divHead{
     display: flex;
@@ -51,7 +238,6 @@ body{
 
 .divLogo{
     margin: 20px 0 0 50px;
-    background-color: var(--verde--10);
 }
 
 .container-header{
@@ -71,11 +257,6 @@ body{
     font-size: large;
     font-family: Arial, sans-serif;
     font-weight: 600;
-}
-
-.corLink{
-    color: white;
-    text-decoration: none;
 }
 
 .ajusteLogos{
@@ -98,12 +279,6 @@ main{
     padding: 2rem 6rem;
     background-color: var(--verde--5);
     color: black;
-}
-
-.centralizandoTitulos{
-    display: flex; 
-    justify-content: center;
-    font-weight: 900;
 }
 
 .centralizando{
@@ -168,6 +343,7 @@ main{
 .containerVestuario{
     display: flex;
     flex-direction: row;
+    margin: 100px 0 50px -25px;
     gap: 10px;
     flex-wrap: nowrap;
     align-items: flex-end;
@@ -231,9 +407,11 @@ footer{
     .divPrincipalTituloImagem{
         flex-direction: column;
     }
-}
 
+    
+}
 /* 1025 até 1325 */
+
 @media (min-width: 1025px) and (max-width: 1325px){
     .containerCapacete{
         display: flex;
@@ -247,12 +425,6 @@ footer{
 
 /* 1024 x 1080 */
 @media screen and (max-width: 1024px){
-    body{
-        margin: 0;
-        align-items: center;
-    }
-    
-    
     .section1 {
         margin: 0 160px;
         gap: 250px;
@@ -281,44 +453,16 @@ footer{
         display: none;
     }
 }
-
-/* 768 x 1000 */
+/* 768 x 1024 */
 @media screen and (max-width: 767px){
     .section1 {
         margin: 0 60px;
         gap: 100px;
         flex-direction: column;
     }
-    #menuPodrao{
-        display: none;
-        
-    }
-
-    .menuMobile{
-        display: block;
-        
-    }
-
-    .menuDesktop{
-        display: none;
-    }
 
     .divLogo {
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .divLogo1 {
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #8A3033;
-    } 
-
-    li{
-        margin: 0;
+        margin: 20px 0;
     }
 
     .container-header {
@@ -335,8 +479,7 @@ footer{
     }
 
     .containerCapacete,
-    .containerVestuario
-     {
+    .containerVestuario {
         flex-direction: column;
         align-items: center;
     }
@@ -344,14 +487,6 @@ footer{
     .scroll-to-top{
         display: none;
     }
-    
-    .containerFinal{
-        display: flex;
-        flex-direction: column;
-    }
-   /* .menu{ 
-    display: flex;
-    justify-content: space-around;
-    }  */
-    
 }
+
+/* SO FALTOU AGORA BOTAR O MENU HAMBURGUER NO HEADER DO SITE */
