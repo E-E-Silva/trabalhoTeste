@@ -84,13 +84,12 @@ body{
 
 main{
     margin: 0;
-    padding: 0 4.5rem;
     background-color: var(--verde--10);
 }
 
 .prologoPagina{
-    margin: 0;
-    padding: 2rem 6rem;
+    margin: 0 100px 0 100px;
+    padding: 2rem 6rem ;
     background-color: var(--verde--5);
     color: black;
 }
@@ -197,6 +196,13 @@ main{
 .vestuario:hover{
     background-color: var(--vermelho-10);
 }
+
+#Motos{
+    background-image: url("/imagensBackground/imagem-fundo.svg");
+    background-attachment: fixed;
+    
+}
+
 
 /* Final do Main */
 
